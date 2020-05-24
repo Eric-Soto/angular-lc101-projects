@@ -23,10 +23,6 @@ export class CandidatesComponent implements OnInit {
   ngOnInit() {
   }
 
-  pleaseWork(testStr: string){
-      alert(testStr)
-  }
-
   // Code the addToCrew function here:
 
   addToCrew(crewMember: object){
@@ -38,7 +34,7 @@ export class CandidatesComponent implements OnInit {
 
   // BONUS: Code the changeMissionName function here:
 
-  changeMissionName(newName: string, edit: boolean){
+  changeMissionName(newName: string){
     this.missionName = newName;
   }
 
