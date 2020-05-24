@@ -15,7 +15,7 @@ export class CandidatesComponent implements OnInit {
     {name: 'Jackalope', data: {age: 45, mass: '33 kg', sidekick: 'Chris'}, image: 'assets/images/Chris.png'},
     {name: 'Champ', data: {age: 9, mass: '36 kg', sidekick: 'Carly'}, image: 'assets/images/Carly.png'}
   ];
-
+   
   crew = [];
 
   constructor() { }
@@ -23,10 +23,24 @@ export class CandidatesComponent implements OnInit {
   ngOnInit() {
   }
 
+  pleaseWork(testStr: string){
+      alert(testStr)
+  }
+
   // Code the addToCrew function here:
+
+  addToCrew(crewMember: object){
+    if(!this.crew.includes(crewMember)){
+    this.crew.push(crewMember);
+    }
+  }
 
 
   // BONUS: Code the changeMissionName function here:
+
+  changeMissionName(newName: string, edit: boolean){
+    this.missionName = newName;
+  }
 
 
 }
